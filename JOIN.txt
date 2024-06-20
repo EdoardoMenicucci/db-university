@@ -1,0 +1,7 @@
+//Dipartimento di Scienze economiche e aziendali id9
+[2]SELECT * FROM departments JOIN degrees ON degrees.department_id = departments.id WHERE departments.name LIKE '%Neuroscienze%' AND degrees.level = 'Magistrale';
+[3]SELECT * FROM `course_teacher` WHERE teacher_id = 44;
+[4]SELECT students.name, students.surname, students.degree_id, degrees.department_id FROM students JOIN degrees ON students.degree_id = degrees.id;
+[5]SELECT * FROM `course_teacher` JOIN courses ON courses.degree_id = course_teacher.teacher_id;
+//dipartimento mat 5
+[6]SELECT * FROM `course_teacher` JOIN degrees ON degrees.department_id = 5 GROUP BY teacher_id;
